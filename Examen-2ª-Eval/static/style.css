@@ -1,0 +1,85 @@
+html, body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#mapa {
+  position: fixed;
+  right: 0rem;
+  height: 100%;
+  width: 80%;
+}
+
+#info {
+  position: fixed;
+  z-index: 999;
+  background-color: rgb(16, 41, 110);
+}
+
+#examen-info {
+  top: 1rem;
+  right: 1rem;
+  position: fixed;
+  padding: 0 10px 0 10px;
+  z-index: 999;
+  background-color: rgb(16, 41, 110);
+  color: rgb(202, 202, 12);
+  border-radius: 20px;
+  border: 2px solid rgb(202, 202, 12);
+}
+
+#info {
+  bottom: 0rem;
+  left: 0rem;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-y: scroll;
+}
+
+.titulo {
+  width: 100%;
+  height: fit-content;
+  padding: 0.5rem;
+  background-color: rgb(202, 202, 12);
+  color: rgb(16, 41, 110);
+  text-align: center;
+  position: sticky;
+}
+
+.lista li{
+  padding: 1rem;
+  margin: 2px;
+  border: 1px solid rgb(202, 202, 12);
+  list-style: none;
+  color: rgb(202, 202, 12);
+  background-color: rgb(16, 41, 110);
+}
+.lista li,h3 {
+  font-weight: bolder;
+}
+#info h3 {
+  grid-area: titulo;
+}
+#info span {
+  grid-area: distancia;
+}
+#info img {
+  grid-area: imagen;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#info p {
+  grid-area: desc;
+}
+#info a {
+  grid-area: enlace;
+}/*# sourceMappingURL=style.css.map */
